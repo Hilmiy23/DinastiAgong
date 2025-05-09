@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(180, 216, 228); /* Background color */
+    color: rgb(81, 33, 22); /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(0, 0, 0); /* Heading color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: square;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fancy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fancy-button:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fancy-button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    text-align: center; /* Centers the titles */
+}
+
+.image-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    gap: 70px; /* Add space between images */
+    margin: 20px 0; /* Add margin above and below the container */
+}
+
+.image-container img {
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better appearance */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Reduce space between images */
+    margin: 20px 0; /* Add margin above and below the container */
+}
+
+/* General styles for images */
+.image-container img {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better appearance */
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox container for images */
+.image-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    gap: 10px; /* Space between images */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    margin: 20px 0; /* Add margin above and below */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .fancy-button {
+        width: 90%; /* Make buttons take up most of the screen width */
+        margin: 10px auto; /* Center buttons */
+    }
+
+    body {
+        padding: 10px; /* Add padding for better spacing on small screens */
+    }
+}
